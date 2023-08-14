@@ -393,7 +393,7 @@ trainer.train()
 ```
 最好的結果是MAPE=134.7。
 ### 結果
-在訓練完以上的模型後面，最好的結果是由`SVR(kernel='rbf',C=1e3)`訓練出的模型(MAPE= 34.02)。所以，把前面前處理好的`test`丟到模型裡面做預測，並產出最後的結果，存成`result.csv`，就可以繳交了！
+在訓練完以上的模型後面，最好的結果是由`SVR(kernel='rbf',C=1e3)`訓練出的模型(MAPE= 34.02)。所以，把前面前處理好的`test`丟到模型裡面做預測，並產出最後的結果，存成`result.csv`。
 ``` python
 test.drop(columns={'title','created_at','forum_id','author_id','forum_stats'}, inplace=True)
 result_test = np.array(test)
